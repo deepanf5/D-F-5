@@ -1,0 +1,49 @@
+/* primeNG Theme */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+/* primeNG Icon */
+@import "primeicons/primeicons.css";
+
+/* primeNG utitlies css */
+@import url("/node_modules/primeflex/primeflex.css");
+
+/* primeFlex Theme */
+@import "primeflex/themes/primeone-light.css";
+
+
+/* colors */
+
+:root {
+    --color-text: #e4e3e2;
+    --color-primary: rgba(31, 31, 31, 254);
+    --color-secondary: #3449462e;
+}
+
+
+html {
+
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0 4rem;
+    font-size: 1.8rem;
+    background-color: rgba(31, 31, 31, 254);
+
+}
+
+
+/* global styling */
+
+*,
+*::after,
+*::before {
+
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}

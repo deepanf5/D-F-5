@@ -1,0 +1,28 @@
+:host ::ng-deep .p-tabview .p-tabview-nav {
+    background-color: var(--color-primary);
+    border: none;
+}
+
+:host ::ng-deep .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    background-color: var(--color-primary);
+
+}
+
+:host ::ng-deep .p-tabview .p-tabview-panels {
+    background-color: var(--color-primary);
+}
+
+:host ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    background-color: var(--color-primary);
+
+}
+
+:host ::ng-deep .p-tabview .p-tabview-nav .p-tabview-ink-bar {
+    background-color: var(--primary-color);
+
+}
+
+:host ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    border: 0;
+
+}

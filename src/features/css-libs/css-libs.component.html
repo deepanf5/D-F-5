@@ -1,0 +1,20 @@
+<section class="frame-work mt-8">
+    <h2 class="text-center text-white">Libs</h2>
+    <marquee behavior="" direction="left">
+        <div class="mt-1">
+            <div class="flex">
+                <div class="flex-grow-3 lg:flex-grow-0 align-items-center justify-content-center p-4 m-3 border-round" *ngFor="let library of libraries">
+                    <div class="flex flex-wrap">
+                        <div class="flex-order-1 flex align-items-center justify-content-center w-5rem h-4rem">
+<p-avatar image="{{library.image}}"  size="xlarge" shape="circle"></p-avatar>
+                        </div>
+                        <div class="flex-order-2 flex w-10rem h-4rem -mr-8"><span class="text-white mt-2">{{library.name}}</span></div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        
+       
+    </marquee>
+</section>

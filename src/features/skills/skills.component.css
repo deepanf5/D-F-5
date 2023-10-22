@@ -1,0 +1,35 @@
+.skills {
+    height: 350px;
+    background-color: var(--color-secondary);
+    border-radius: 2rem;
+}
+
+:host ::ng-deep p-avatar {
+
+    width: 100%;
+}
+
+
+:host ::ng-deep .p-avatar.p-avatar-xl {
+
+    width: 4rem;
+    height: 4rem;
+
+}
+
+
+@media screen and (min-width:1024px) {
+ 
+    .skills {
+
+        height: 200px;
+    }
+
+:host ::ng-deep .p-avatar.p-avatar-xl {
+
+    width: 8rem;
+    height: 8rem;
+}
+    
+}
+

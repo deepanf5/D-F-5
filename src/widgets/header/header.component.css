@@ -1,0 +1,21 @@
+/* .header {
+    flex-wrap: wrap;
+    color: var(--color-text);
+}
+
+.nav-list {
+
+    width: 100%;
+    flex-wrap: wrap;
+} */
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-list {
+    width: 100%;
+}
