@@ -1,15 +1,12 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-
-
-  showNavList = true;
+  showNavList = false;
   public getScreenWidth: any;
 
   ngOnInit(): void {
@@ -17,8 +14,8 @@ export class HeaderComponent implements OnInit {
   }
 
   toggle() {
-    console.log('clicked')
-    this.showNavList = !this.showNavList
+    console.log('clicked');
+    this.showNavList = !this.showNavList;
   }
 
   @HostListener('window:resize', ['$event'])
@@ -26,7 +23,6 @@ export class HeaderComponent implements OnInit {
     this.getScreenWidth = window.innerWidth;
     if (this.getScreenWidth > 800) {
       this.showNavList = true;
-    };
-
+    }
   }
 }

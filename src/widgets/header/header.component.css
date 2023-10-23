@@ -1,14 +1,3 @@
-/* .header {
-    flex-wrap: wrap;
-    color: var(--color-text);
-}
-
-.nav-list {
-
-    width: 100%;
-    flex-wrap: wrap;
-} */
-
 .nav {
 
     display: flex;
@@ -18,4 +7,11 @@
 
 .nav-list {
     width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-item {
+
+    margin: 0;
 }
