@@ -1,28 +1,35 @@
 <section class="skills mt-8" id="skill">
-    
-    <h2 class="text-white capitalize text-center pt-4"><i class="pi pi-spin pi-bolt" style="font-size: 4rem;color:var(--primary-color)"></i></h2>
-    <div class="grid">
-        <div class="col-12 md:col-6 lg:col-6">
-            <div class="text-center p-3 border-round-sm mt-2">
-                <!-- <div class="flex capitalize align-items-center  justify-content-center w-10rem h-4rem text-white font-bold border-round">Skill sets</div> -->
-                <div class="overflow-hidden">
-                    <div class="flex justify-content-start flex-wrap">
-                        <ng-container *ngFor="let skill of skills">
-                            <div class="flex capitalize align-items-center  justify-content-center w-10rem h-4rem text-primary font-bold border-round m-2 text-primary">{{skill}}</div>
-                        </ng-container>
-                    </div>
-                </div>
-            </div>
+  <h2 class="text-white capitalize text-center pt-4">
+    <i
+      class="pi pi-spin pi-bolt"
+      style="font-size: 4rem; color: var(--primary-color)"
+    ></i>
+  </h2>
+  <div class="grid">
+    <div class="col-12 md:col-6 lg:col-6">
+      <div class="text-center p-3 border-round-sm mt-2">
+        <!-- <div class="flex capitalize align-items-center  justify-content-center w-10rem h-4rem text-white font-bold border-round">Skill sets</div> -->
+        <div class="overflow-hidden">
+          <div class="flex justify-content-start flex-wrap">
+            <ng-container *ngFor="let skill of skills">
+              <div
+                class="flex capitalize align-items-center justify-content-center w-10rem h-4rem text-primary font-bold border-round m-2 text-primary"
+              >
+                {{ skill }}
+              </div>
+            </ng-container>
+          </div>
         </div>
-        <div class="col-12 md:col-6 lg:col-6">
-            <div class="text-center border-round-sm">
-                <p-avatarGroup styleClass="lg:col-offset-3">
-                  <ng-container *ngFor="let skill of skillsImage">
-                    <p-avatar image="{{skill.image}}" size="xlarge" ></p-avatar>
-                  </ng-container>
-                </p-avatarGroup>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="col-12 md:col-6 lg:col-6">
+      <div class="text-center border-round-sm">
+        <p-avatarGroup styleClass="lg:col-offset-3 md:m-2">
+          <ng-container *ngFor="let skill of skillsImage">
+            <p-avatar image="{{ skill.image }}" size="xlarge"></p-avatar>
+          </ng-container>
+        </p-avatarGroup>
+      </div>
+    </div>
+  </div>
 </section>
-
