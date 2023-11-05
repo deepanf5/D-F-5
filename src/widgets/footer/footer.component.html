@@ -1,25 +1,39 @@
 <section class="footer">
-    <div class="grid">
-        <div class="col-12 md:col-6 lg:col-3">
-            <div class="text-left border-round-sm">
-                <h2 class="text-white text-3xl">About</h2>
-                
-                <p class="color-green text-2xl"><fa-icon class="mr-2 text-yellow-500 color-green" [icon]="mail"></fa-icon>D-F-5--> official portfolio</p>
-              
-            </div>
-        </div>
-        <div class="col-12 md:col-6 lg:col-3">
-            <div class="text-left  border-round-sm">
-                <h2 class="text-white text-3xl">Reach me</h2>
-                <fa-icon class="mr-2 text-yellow-500 color-green" [icon]="mail"></fa-icon>
-                <a class="text-2xl green-500 color-green capitalize" href="mailto:deepanappu1999@gmail.com">drop an email</a>
-            </div>
-        </div>
-        <div class="col-12 md:col-6 lg:col-3 lg:col-offset-3">
-            <div class="text-left  border-round-sm">
-                <p class="mt-8 text-2xl  text-primary">copy rights @ D-F-5--> {{date | date:"yyyy"}}</p>
-            </div>
-        </div>
-       
+  <div class="grid">
+    <div class="col-12 md:col-6 lg:col-3">
+      <div class="text-left border-round-sm">
+        <h2 class="text-white text-3xl">About</h2>
+
+        <p class="color-green text-2xl">
+          <fa-icon
+            class="mr-2 text-yellow-500 color-green"
+            [icon]="mail"
+          ></fa-icon
+          >D-F-5--> official portfolio
+        </p>
+      </div>
     </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <div class="text-left border-round-sm">
+        <h2 class="text-white text-3xl">Reach me</h2>
+        <a
+          class="text-2xl green-500 color-green capitalize"
+          href="mailto:deepanappu1999@gmail.com"
+        >
+          <fa-icon
+            class="mr-2 text-yellow-500 color-green"
+            [icon]="mail"
+          ></fa-icon
+          >drop an email</a
+        >
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3 lg:col-offset-3">
+      <div class="text-left border-round-sm">
+        <p class="mt-8 text-2xl text-primary">
+          copy rights @ D-F-5--> {{ date | date : "yyyy" }}
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
