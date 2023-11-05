@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.getScreenWidth = window.innerWidth;
+    this.onWindowResize();
   }
 
   toggle() {
@@ -21,6 +22,7 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
     this.getScreenWidth = window.innerWidth;
+
     if (this.getScreenWidth > 800) {
       this.showNavList = true;
     }
