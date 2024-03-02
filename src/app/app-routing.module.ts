@@ -7,9 +7,6 @@ const routes: Routes = [
   {
     path: '', component: HeaderComponent
   },
-  {
-    path: 'skill', component: SkillsComponent
-  }
 ];
 
 @NgModule({

@@ -8,6 +8,9 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   showNavList = false;
   public getScreenWidth: any;
+  activeSkill = false;
+  activeProject = false
+  home = true;
 
   ngOnInit(): void {
     this.getScreenWidth = window.innerWidth;
@@ -27,4 +30,14 @@ export class HeaderComponent implements OnInit {
       this.showNavList = true;
     }
   }
+
+  skill() {
+    this.activeSkill = true;
+    this.activeSkill === true ? (this.home = false, this.activeProject = false) : false;
+  }
+  project() {
+    this.activeProject = true;
+    this.activeSkill = true ? (this.home = false, this.activeSkill = false) : false;
+  }
+  
 }
