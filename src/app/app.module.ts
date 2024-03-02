@@ -32,8 +32,6 @@ import { ScrollTopModule } from 'primeng/scrolltop';
 import { DialogModule } from 'primeng/dialog';
 import { ResumeComponent } from 'src/features/resume/resume.component';
 
-// pdf
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 
@@ -76,8 +74,6 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     // font-awsome
     FontAwesomeModule,
 
-    // pdf
-    PdfViewerModule
     
     
 
