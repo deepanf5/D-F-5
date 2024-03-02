@@ -8,7 +8,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 })
 export class SkillsComponent {
   faCoffee = faCoffee;
-  skills = ['html', 'css', 'js', 'Ts', 'angular', 'react + ts'];
+  skills = ['html', 'css', 'js', 'Ts', 'angular', 'react+ts'];
   skillsImage = [
     {
       image: 'https://www.svgrepo.com/show/349402/html5.svg',
