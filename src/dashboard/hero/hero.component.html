@@ -17,9 +17,13 @@
         websites that SELLS”.
       </p>
       <!-- <p-button pRipple label="See More &rarr;" [link]="true" [outlined]="true" size="large"></p-button> -->
-      <p-button class="mb-2" pRipple [outlined]="true" label=" &rarr; "
+      <p-button class="mb-2 mr-2" pRipple [outlined]="true" label=" &rarr; "
         ><a class="text-primary" href="#skill">See More</a></p-button
       >
+      <!-- <p-button class="mb-2" pRipple severity="success" [outlined]="true" label=" &#8595;"
+        ></p-button
+      > -->
+      <p-button (click)="showDialog()" label="View Resume &#8599;" [outlined]="true" severity="success"><a  download class="text-green-500" href="/src/assets/file/Deepan-Resume.pdf"></a></p-button>
     </section>
   </div>
   <div class="col-12 md:col-6 overflow-hidden">
@@ -31,3 +35,7 @@
     />
   </div>
 </div>
+
+<p-dialog header="Deepan-Resume" [position]="'center'" [(visible)]="visible" [style]="{width: '80vw', margin:'2rem', overflow:'auto'}">
+  <app-resume></app-resume>
+</p-dialog>

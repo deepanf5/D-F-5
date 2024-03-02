@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
+  
+
+  visible: boolean = false;
+
+  showDialog() {
+      this.visible = true;
+  }
 
 }

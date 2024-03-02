@@ -29,6 +29,15 @@ import { BlockUIModule } from 'primeng/blockui';
 import { DividerModule } from 'primeng/divider';
 import { MenubarModule } from 'primeng/menubar';
 import { ScrollTopModule } from 'primeng/scrolltop';
+import { DialogModule } from 'primeng/dialog';
+import { ResumeComponent } from 'src/features/resume/resume.component';
+
+// pdf
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
+
+
+
 
 
 
@@ -43,6 +52,7 @@ import { ScrollTopModule } from 'primeng/scrolltop';
     CssLibsComponent,
     FooterComponent,
     ExperienceComponent,
+    ResumeComponent
 
   ],
   imports: [
@@ -61,10 +71,16 @@ import { ScrollTopModule } from 'primeng/scrolltop';
     DividerModule,
     MenubarModule,
     ScrollTopModule,
-
+    DialogModule,
 
     // font-awsome
-    FontAwesomeModule
+    FontAwesomeModule,
+
+    // pdf
+    PdfViewerModule
+    
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
