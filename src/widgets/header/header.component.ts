@@ -18,7 +18,6 @@ export class HeaderComponent implements OnInit {
   }
 
   toggle() {
-    console.log('clicked');
     this.showNavList = !this.showNavList;
   }
 
