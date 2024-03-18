@@ -24,7 +24,7 @@ export class SkillsComponent {
         'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/4/4c/20210506173340%21Typescript_logo_2020.svg/120px-Typescript_logo_2020.svg.png',
     },
     {
-      image: 'https://www.svgrepo.com/show/373427/angular.svg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Angular_gradient.png/1200px-Angular_gradient.png',
     },
     {
       image:
