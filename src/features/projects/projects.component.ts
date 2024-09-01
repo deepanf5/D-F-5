@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faUserNinja, faGamepad, faBlog } from '@fortawesome/free-solid-svg-icons';
+import { faUserNinja, faGamepad, faBlog, faVideo } from '@fortawesome/free-solid-svg-icons';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -13,12 +13,13 @@ export class ProjectsComponent implements OnInit {
   blockedPanel: boolean = true;
   ninja = faUserNinja;
   game = faGamepad;
-  blog = faBlog
+  blog = faBlog;
+  video = faVideo
 
   ngOnInit(): void {
     this.items = [
       { label: 'NGX-superAdmin', icon: 'pi pi-fw pi-user' },
-      { label: 'Game-hub', icon: 'pi pi-fw pi-play' }
+      { label: 'Game-hub', icon: 'pi pi-fw pi-play' },
     ];
     this.activeItem = this.items[0];
   }

@@ -61,6 +61,26 @@
               </ng-template>
             </p-image>
           </div>
+          <div
+            class="max-w-max lg:w-10rem md:flex-order-2 flex align-items-center justify-content-center lg:w-25rem lg:h-15rem font-bold border-round m-2"
+          >
+            <p-image
+              src="../../assets/images/movie-stream.gif"
+              [preview]="true"
+              alt="Image"
+              width="100%"
+              height="150"
+            >
+            <!-- gif size 900 x 599 px -->
+              <ng-template pTemplate="indicator">
+                <a
+                  class="text-white"
+                  href="https://the-movie-app-woad.vercel.app/"
+                  ><i class="pi pi-eye"></i
+                ></a>
+              </ng-template>
+            </p-image>
+          </div>
         </div>
       </div>
     </div>
@@ -129,6 +149,25 @@
               ><a
                 style="color: #20bf6b"
                 href="https://game-hub-brown-one.vercel.app/"
+                >View</a
+              ></p-button
+            >
+          </p-tabPanel>
+          <p-tabPanel header="Header">
+            <ng-template pTemplate="header">
+              <fa-icon class="mr-2" [icon]="video"></fa-icon>
+              <span>The Movie-streamer</span>
+            </ng-template>
+            <p
+              class="text-2xl line-height-4 lg:text-left"
+              style="color: #c4c4c3 !important"
+            >
+            movie-streamer application is built with Angular v17,experience films. This application Provides detailed information about each movie, including synopsis, cast, and ratings.
+            </p>
+            <p-button [link]="true" [outlined]="true" severity="success"
+              ><a
+                style="color: #20bf6b"
+                href="https://the-movie-app-woad.vercel.app/"
                 >View</a
               ></p-button
             >
