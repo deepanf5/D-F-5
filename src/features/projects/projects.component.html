@@ -71,7 +71,7 @@
               width="100%"
               height="150"
             >
-            <!-- gif size 900 x 599 px -->
+              <!-- gif size 900 x 599 px -->
               <ng-template pTemplate="indicator">
                 <a
                   class="text-white"
@@ -85,9 +85,11 @@
       </div>
     </div>
     <!-- About project -->
-    <div class="col-12 md:col-6 lg:col-6 mt-2">
+    <div class="col-12 md:col-6 lg:col-6 mt-8">
       <div class="border-round-sm font-bold">
-        <h3 class="text-white text-center lg:text-left text-2xl mt-6">Project Details</h3>
+        <h3 class="text-white text-center lg:text-left text-2xl mt-6">
+          Project Details
+        </h3>
         <p-tabView>
           <p-tabPanel header="header">
             <ng-template pTemplate="header">
@@ -98,8 +100,8 @@
               class="text-2xl line-height-4 lg:text-left text-color"
               style="color: #c4c4c3 !important"
             >
-              3:16:3 is my username in the call off duty mobile game. I got inspired
-              by playing this game. Codmobileblog is my first up and
+              3:16:3 is my username in the call off duty mobile game. I got
+              inspired by playing this game. Codmobileblog is my first up and
               running blog website.
             </p>
             <p-button [link]="true" [outlined]="true" severity="success"
@@ -162,7 +164,9 @@
               class="text-2xl line-height-4 lg:text-left"
               style="color: #c4c4c3 !important"
             >
-            movie-streamer application is built with Angular v17, This application Provides detailed information about each movie, including synopsis, cast, and ratings much more !.
+              movie-streamer application is built with Angular v17, This
+              application Provides detailed information about each movie,
+              including synopsis, cast, and ratings much more !.
             </p>
             <p-button [link]="true" [outlined]="true" severity="success"
               ><a
@@ -173,6 +177,123 @@
             >
           </p-tabPanel>
         </p-tabView>
+      </div>
+    </div>
+  </div>
+  <div class="grid mt-8">
+    <!-- About project -->
+    <div class="col-12 md:col-6 lg:col-6 mt-8">
+      <div class="border-round-sm font-bold">
+        <h3 class="text-white text-center lg:text-left text-2xl mt-6">
+          Project Details
+        </h3>
+        <p-tabView>
+          <p-tabPanel header="header">
+            <ng-template pTemplate="header">
+              <fa-icon class="mr-2" [icon]="blog"></fa-icon>
+              <span>idolater</span>
+            </ng-template>
+            <p
+              class="text-2xl line-height-4 lg:text-left text-color"
+              style="color: #c4c4c3 !important"
+            >
+              Idolater is an Angular-based application built using the latest
+              Signals API and signal-based forms. It integrates with Supabase
+              for backend services.
+            </p>
+            <p-button [link]="true" [outlined]="true" severity="success"
+              ><a
+                style="color: #20bf6b"
+                href="https://www.idolater.fun/#/sign-up"
+                >View</a
+              ></p-button
+            >
+          </p-tabPanel>
+        </p-tabView>
+      </div>
+    </div>
+    <!-- Project images -->
+    <div class="col-12 md:col-6 lg:col-6">
+      <div class="text-center border-round-sm font-bold">
+        <div
+          class="flex flex-wrap align-items-center justify-content-center lg:align-items-start lg:justify-content-end mt-8 lg:column-gap-1 lg:row-gap-1"
+        >
+          <div
+            class="max-w-max lg:w-10rem md:flex-order-1 flex align-items-center justify-content-center lg:w-25rem lg:h-15rem font-bold border-round m-2"
+          >
+            <p-image
+              src="../../assets/images/idolater.gif"
+              [preview]="true"
+              alt="Image"
+              width="100%"
+              height="150"
+            >
+              <ng-template pTemplate="indicator">
+                <a class="text-white" href="https://codmobileblog.netlify.app/"
+                  ><i class="pi pi-eye"></i
+                ></a>
+              </ng-template>
+            </p-image>
+          </div>
+          <div
+            class="max-w-max lg:w-10rem md:flex-order-1 flex align-items-center justify-content-center lg:w-25rem lg:h-15rem font-bold border-round m-2"
+          >
+            <!-- <p-image
+              src="../../assets/images/ngx.gif"
+              [preview]="true"
+              alt="Image"
+              width="100%"
+              height="150"
+            >
+              <ng-template pTemplate="indicator">
+                <a
+                  class="text-white"
+                  href="https://ngx-super-admin-1dd48.web.app/"
+                  ><i class="pi pi-eye"></i
+                ></a>
+              </ng-template>
+            </p-image> -->
+          </div>
+          <div
+            class="max-w-max lg:w-10rem md:flex-order-2 flex align-items-center justify-content-center lg:w-25rem lg:h-1s5rem font-bold border-round m-2"
+          >
+            <!-- <p-image
+              src="../../assets/images/game.gif"
+              [preview]="true"
+              alt="Image"
+              width="100%"
+              height="150"
+            >
+              <ng-template pTemplate="indicator">
+                <a
+                  class="text-white"
+                  href="https://game-hub-brown-one.vercel.app/"
+                  ><i class="pi pi-eye"></i
+                ></a>
+              </ng-template>
+            </p-image> -->
+          </div>
+          <div
+            class="max-w-max lg:w-10rem md:flex-order-2 flex align-items-center justify-content-center lg:w-25rem lg:h-15rem font-bold border-round m-2"
+          >
+            <!-- <p-image
+              src="../../assets/images/movie-stream.gif"
+              [preview]="true"
+              alt="Image"
+              width="100%"
+              height="150"
+            > -->
+            <!-- gif size 900 x 599 px -->
+            <!-- <ng-template pTemplate="indicator">
+                <a
+                  class="text-white"
+                  href="https://the-movie-app-woad.vercel.app/"
+                  ><i class="pi pi-eye"></i
+                ></a>
+              </ng-template>
+            </p-image> -->
+          </div>
+        </div>
       </div>
     </div>
   </div>

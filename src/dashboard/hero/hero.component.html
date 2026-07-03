@@ -13,8 +13,7 @@
         class="mt-0 mb-4 lg:text-700 line-height-3"
         style="color: #c4c4c3 !important"
       >
-        I build things for the Web. I don't just build websites, I build
-        websites that SELLS”.
+        I build things for the Web. That are Fast, Modern, and User-Friendly.
       </p>
       <!-- <p-button pRipple label="See More &rarr;" [link]="true" [outlined]="true" size="large"></p-button> -->
       <p-button class="mb-2 mr-2" pRipple [outlined]="true" label="&#8645;"
@@ -23,7 +22,17 @@
       <!-- <p-button class="mb-2" pRipple severity="success" [outlined]="true" label=" &#8595;"
         ></p-button
       > -->
-      <p-button (click)="showDialog()" label="View Resume &#8599;" [outlined]="true" severity="success"><a  download class="text-green-500" href="/src/assets/file/Deepan-Resume.pdf"></a></p-button>
+      <p-button
+        (click)="showDialog()"
+        label="View Resume &#8599;"
+        [outlined]="true"
+        severity="success"
+        ><a
+          download
+          class="text-green-500"
+          href="/src/assets/file/Deepan-Resume.pdf"
+        ></a
+      ></p-button>
     </section>
   </div>
   <div class="col-12 md:col-6 overflow-hidden desktop-clip-path">
@@ -35,6 +44,11 @@
   </div>
 </div>
 
-<p-dialog header="Deepan-Resume" [position]="'center'" [(visible)]="visible" [style]="{width: '80vw', margin:'2rem', overflow:'auto'}">
+<p-dialog
+  header="Deepan-Resume"
+  [position]="'center'"
+  [(visible)]="visible"
+  [style]="{ width: '80vw', margin: '2rem', overflow: 'auto' }"
+>
   <app-resume></app-resume>
 </p-dialog>
