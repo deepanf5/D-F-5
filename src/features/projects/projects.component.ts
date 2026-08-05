@@ -1,11 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { faUserNinja, faGamepad, faBlog, faVideo } from '@fortawesome/free-solid-svg-icons';
+import {
+  faUserNinja,
+  faGamepad,
+  faBlog,
+  faVideo,
+  faListCheck,
+} from '@fortawesome/free-solid-svg-icons';
 import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent implements OnInit {
   items: MenuItem[] | undefined;
@@ -14,7 +20,8 @@ export class ProjectsComponent implements OnInit {
   ninja = faUserNinja;
   game = faGamepad;
   blog = faBlog;
-  video = faVideo
+  video = faVideo;
+  list = faListCheck;
 
   ngOnInit(): void {
     this.items = [
@@ -23,5 +30,4 @@ export class ProjectsComponent implements OnInit {
     ];
     this.activeItem = this.items[0];
   }
-
 }
