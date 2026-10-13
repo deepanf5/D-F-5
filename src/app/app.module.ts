@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from '../widgets/header/header.component';
@@ -14,8 +12,7 @@ import { CssLibsComponent } from '../features/css-libs/css-libs.component';
 import { FooterComponent } from '../widgets/footer/footer.component';
 import { ExperienceComponent } from 'src/features/experience/experience.component';
 
-
-// font-awsome 
+// font-awsome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // primeNG components
@@ -31,14 +28,7 @@ import { MenubarModule } from 'primeng/menubar';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { DialogModule } from 'primeng/dialog';
 import { ResumeComponent } from 'src/features/resume/resume.component';
-
-
-
-
-
-
-
-
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -50,8 +40,7 @@ import { ResumeComponent } from 'src/features/resume/resume.component';
     CssLibsComponent,
     FooterComponent,
     ExperienceComponent,
-    ResumeComponent
-
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,
@@ -70,15 +59,11 @@ import { ResumeComponent } from 'src/features/resume/resume.component';
     MenubarModule,
     ScrollTopModule,
     DialogModule,
-
+    CardModule,
     // font-awsome
     FontAwesomeModule,
-
-    
-    
-
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

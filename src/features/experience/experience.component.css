@@ -1,4 +1,7 @@
 .color-green {
+  color: #20bf6b !important;
+}
 
-    color: #20bf6b !important;
+.vertical-line {
+  height: 10rem;
 }

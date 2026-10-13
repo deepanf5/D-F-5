@@ -1,23 +1,25 @@
 <section class="skills mt-8 lg:h-26rem" id="skill">
-  <h2 class="text-center capitalize  pt-2">skills</h2>
+  <h2 class="text-center capitalize pt-2">skills</h2>
   <h3 class="text-white capitalize text-center pt-4">
     <i
       class="pi pi-spin pi-bolt"
       style="font-size: 4rem; color: var(--primary-color)"
     ></i>
   </h3>
-  
+
   <div class="grid">
     <div class="col-12 md:col-6 lg:col-6">
       <div class="text-center p-3 border-round-sm mt-2">
         <!-- <div class="flex capitalize align-items-center  justify-content-center w-10rem h-4rem text-white font-bold border-round">Skill sets</div> -->
         <div class="overflow-hidden">
-          <div class="flex   justify-content-center lg:justify-content-start  flex-wrap">
+          <div
+            class="flex justify-content-center lg:justify-content-start flex-wrap"
+          >
             <ng-container *ngFor="let skill of skills">
               <div
-                class="flex capitalize align-items-center justify-content-center bg-black-alpha-10 text-black-alpha-90 text-2xl  w-8rem h-4rem text-cyan-50 p-4 border-round m-3"
+                class="flex capitalize align-items-center justify-content-center bg-black-alpha-10 text-black-alpha-90 text-2xl w-8rem h-4rem text-cyan-50 p-4 border-round m-3"
               >
-              {{skill}}
+                {{ skill }}
               </div>
             </ng-container>
           </div>
@@ -35,4 +37,3 @@
     </div>
   </div>
 </section>
-
